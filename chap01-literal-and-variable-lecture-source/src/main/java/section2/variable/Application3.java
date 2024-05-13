@@ -84,7 +84,7 @@ public class Application3 {
 
         String goHome;  //동사형
         String home;  //가급적 명사형으로 짓는다
-        
+
         boolean isAlive =true;
         boolean isTrue -true;
 //        boolean isDead = true; 부정형보다 긍정형이 더 나은 방식이다.
