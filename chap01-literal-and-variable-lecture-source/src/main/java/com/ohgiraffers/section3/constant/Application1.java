@@ -38,7 +38,7 @@ public class Application1 {
         System.out.println("MAX_AGE = " + (MAX_AGE * 2));
 
         int sum = MAX_AGE;
-        int MAX_AGE;  //상수도 변수이고, 변수명이 지정되어있기 때문에 같은 변수명으로 다시 선언할수없다
+        //int MAX_AGE;  //상수도 변수이고, 변수명이 지정되어있기 때문에 같은 변수명으로 다시 선언할수없다
 
 
     }

@@ -15,8 +15,8 @@ public class Application2 {
 
 //  모든문자는 대문자 혹은 숫자만 사용한다.
         final int AGE1=20;
-        final int AGE1 = 20;
-        
+        //final int AGE1 = 20;
+
 //        단어와 단어 연결은 언더 스코어 사용한다
         final  int MAX_AGE = 40;
         final  int MIN_AGE =20;
