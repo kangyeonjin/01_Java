@@ -11,7 +11,5 @@ public class test6 {
         int min = aa.non(a, b);
 
         System.out.println("두수중 최소값은 : " + min);
-
     }
-    public void
 }
