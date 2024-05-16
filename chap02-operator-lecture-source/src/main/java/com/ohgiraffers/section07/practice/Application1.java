@@ -67,18 +67,18 @@ public class Application1 {
 
 //논리 연산자
 //        1. 변수 `a = true`, `b = false`일 때, 둘 다 참이어야 참을 반환하는 조건문을 작성하세요.
-        boolean a = true;
-        boolean b = false;
-        System.out.println( a && a); //and연산은 둘다 참이어야 참을 반환하므로
+        boolean e = true;
+        boolean f = false;
+        System.out.println( e && f); //and연산은 둘다 참이어야 참을 반환하므로
 
 //        2. `int age = 20;`이 18 이상이면서 65 미만인지 확인하는 코드를 작성하세요.
-        int age = 20;
-        System.out.println(age >=18 && age <=65);
+        int age1 = 20;
+        System.out.println(age1 >=18 && age1 <=65);
 
 //        3. 변수 `x = 10`, `y = 20`일 때, `x`가 10이 아니거나 `y`가 25 이상인지 확인하는 코드를 작성하세요.
-        int x = 10;
-        int y = 20;
-        System.out.println(x != 10 || y >= 25);
+        int g = 10;
+        int h = 20;
+        System.out.println(g != 10 || h >= 25);
 
     }
 
