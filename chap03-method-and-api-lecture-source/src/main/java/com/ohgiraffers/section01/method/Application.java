@@ -3,14 +3,59 @@ package com.ohgiraffers.section01.method;
 public class Application {
     public static void main(String[] args) {
 
-        int a = ++10;
-        System.out.println(a);
+        System.out.println("main() 시작됨...");
+        /*
+        * 메소드 호출방법
+        *
+        * 1. 사용준비
+        * [클래스명] [사용할이름] = new [클래스명]();
+        *
+        * 2. 사용
+        * [사용할이름].[메소드명]();
+        *
+        * */
 
-        int b = 10++
+        Application app1 = new Application();
+        app1.methodA();
 
+
+        System.out.println("main() 종료됨...");
 
 
     }
+
+    /*
+    * [접근제어자] [반환타입] [메소드이름] ([매개변수...]){
+    *   //실행할코드
+    *    //반환타입이 있을 격ㅇ우 반환타입에 맞게 return
+    * }
+    * */
+
+   public void methodA(){
+
+       System.out.println("method A 호출함...");
+
+       methodB();
+
+       System.out.println("method A 종료됨...");
+
+   }
+   public void  methodB(){
+
+       System.out.println("method B 호출함..");
+
+       methodC();
+
+       System.out.println("method B 종료함..");
+   }
+
+   public void methodC(){
+
+       System.out.println("method C 호출함..");
+
+       System.out.println("method C 종료함..");
+
+   }
 
 }
 
