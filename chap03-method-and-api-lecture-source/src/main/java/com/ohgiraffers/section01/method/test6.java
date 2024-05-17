@@ -1,5 +1,7 @@
 package com.ohgiraffers.section01.method;
 
+import java.util.Date;
+
 public class test6 {
     public static void main(String[] args) {
 
@@ -13,3 +15,6 @@ public class test6 {
         System.out.println("두수중 최소값은 : " + min);
     }
 }
+
+//Date data  = new Date();
+//java.sql.Date sqlDate = new java.sql.Date(date.getTime());
