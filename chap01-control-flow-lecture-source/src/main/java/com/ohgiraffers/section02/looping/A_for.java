@@ -3,6 +3,12 @@ package com.ohgiraffers.section02.looping;
 import java.util.Scanner;
 
 public class A_for {
+    public void testExample0(){
+        /*안녕하세요 다섯번 출력하기*/
+        for (int i = 0;i < 5; i++ )
+            System.out.println("안녕하세요");
+
+    }
     public void testSimpleForStatement(){
 
         /*
