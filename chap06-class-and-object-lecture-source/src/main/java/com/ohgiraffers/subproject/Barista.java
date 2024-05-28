@@ -15,6 +15,7 @@ public class Barista {
             coffees[i] = new Coffee(order.getMenuName(), order.getOption());
         }
         return coffees;
+
     }
 }
 
