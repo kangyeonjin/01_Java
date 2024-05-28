@@ -1,7 +1,5 @@
 package com.ohgiraffers.section01.polymorphism;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class Application1 {
     /*
      * 다형성

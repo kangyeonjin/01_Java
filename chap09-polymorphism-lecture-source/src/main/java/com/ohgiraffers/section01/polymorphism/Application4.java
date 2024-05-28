@@ -8,7 +8,6 @@ public class Application4 {
          Animal randomAnimal =app4.getRandomAnimal();
          randomAnimal.cry();
 
-
     }
     public Animal getRandomAnimal(){
 
