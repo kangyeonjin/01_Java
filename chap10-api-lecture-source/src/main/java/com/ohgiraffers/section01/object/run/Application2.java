@@ -1,6 +1,6 @@
 package com.ohgiraffers.section01.object.run;
 
-import java.awt.print.Book;
+import com.ohgiraffers.section01.object.book.Book;
 
 public class Application2 {
     //object의 equals()
@@ -21,8 +21,8 @@ public class Application2 {
         //=> 동일한 필드값을 가지는 객체를 같은 객체로 판단할수있도록 하고싶은 경우가 생긴다
         //=> 오버라이딩을 통해 각각의 필드가 동일한 값을 가지는지 확인
 
-         Book book1 = new Book(1,"홍길동전","허균","50000");
-         Book book2 = new Book(1,"홍길동전","허균","50000");
+         Book book1 = new Book(1,"홍길동전","허균",50000);
+         Book book2 = new Book(1,"홍길동전","허균",50000);
 
         System.out.println("두 인스턴스의 ==연산비교 :"+(book1==book2));
         System.out.println("두 인스턴스의 equals비교 :"+(book1.equals(book2)));

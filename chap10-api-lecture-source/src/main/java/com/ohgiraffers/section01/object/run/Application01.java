@@ -1,6 +1,7 @@
 package com.ohgiraffers.section01.object.run;
 
-import java.awt.print.Book;
+
+import com.ohgiraffers.section01.object.book.Book;
 
 public class Application01 {
     //object클래스의 tostring
@@ -19,7 +20,7 @@ public class Application01 {
         * */
 
         Book book1 = new Book(1,"홍길동전","허균",50000);
-        Book book2 = new Book(2,"목민심서","정약용",30000);
+        Book book2 = new Book(2, "목민심서", "정약용", 30000);
         Book book3 = new Book(3,"목민심서","정약용",30000);
 
 

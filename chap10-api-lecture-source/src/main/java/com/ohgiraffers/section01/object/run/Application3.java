@@ -1,6 +1,6 @@
 package com.ohgiraffers.section01.object.run;
 
-import java.awt.print.Book;
+import com.ohgiraffers.section01.object.book.Book;
 
 public class Application3 {
     //Object의 hashCode()
@@ -14,8 +14,8 @@ public class Application3 {
         *
         * */
 
-        Book book1 = new Book(1,"홍길동전","허균","50000");
-        Book book2 = new Book(1,"홍길동전","허균","50000");
+        Book book1 = new Book(1,"홍길동전","허균",50000);
+        Book book2 = new Book(1,"홍길동전","허균",50000);
 
         System.out.println(book1.hashCode());
         System.out.println(book2.hashCode());

@@ -5,8 +5,108 @@ public class Application1 {
     //string클래스의 자주사용하는 메소드 숙지
     public static void main(String[] args) {
 
+        /*charAt() :해당 문자열의 특정 인덱스에 해당하는 문자를 반환
+         *인덱스를 벗어나면indexoutboundsexception이발생한다
+         *
+         * */
+
+        String str1 = "apple";
+        for (int i = 0; i < str1.length(); i++) {
+            System.out.println("charAt(" + i + ")=" + str1.charAt(i));
+        }
+
+        /*compareTo() : 인자로 전달된 문자열과 사전순으로 비교하여
+         * 두 문자열이 같다면 0을 반환하고 인자로 전달된 문자열보다 작으면 음수를, 크면 양수를반환
+         * 대소문자를 구분하여 비교함
+         * */
+
+        String str2 = "java";
+        String str3 = "java";
+        String str4 = "JAVA";
+        String str5 = "oracle";
+
+        System.out.println("compareTo()=" + str2.compareTo(str3));
+
+        //대문자와 소문자차이는 32
+        System.out.println("compareTo()=" + str2.compareTo(str4));
+        System.out.println("compareTo()=" + str4.compareTo(str3));
+
+        //compareToIgnoreCase(): 대소문자 구분하지 않고 비교
+        System.out.println(str3.compareToIgnoreCase(str4));
+
+
+        /*
+         *concat() : 문자열에 인자로 전달된 문자열을 합치기해서 새로운 문자열을 반환
+         * 원본문자열에는 영향을 주지않는다
+         * */
+
+        System.out.println((str2.concat(str5)));
+        System.out.println(str2);
+
+        /*indexOf():문자열에서 특정문자를 탐색하여 처음 일치하는 인덱스 위치를 정수형으로 반환
+        * 단, 일치하는 문자가 없을때는 -1을 반환한다*/
+        String indexOf = "java oracle";
+        System.out.println(indexOf.indexOf('a'));
+        System.out.println(indexOf.indexOf('z'));
+
+        /*
+        * trim() : 문자열의 앞뒤 공백을 제거한 문자열을 반환한다
+        * */
+        String trimStr = "        java           ";
+        System.out.println("trimStr = "+trimStr+"#");
+        System.out.println("trimStr = "+trimStr.trim()+"#");
+
+        //원본에는 영향을 주지 않는다.
+        System.out.println(trimStr);
+
+        /*
+        * toLowerCase():모든문자를 소문자로 변환시킨다
+        * toUpperCase():모든문자를 대문자로 변환시킨다
+        * */
+
+        String caseStr ="JavaOracle";
+        System.out.println(caseStr.toLowerCase());  //전부소문자로
+        System.out.println(caseStr.toUpperCase());  //전부대문자로
+
+        //원본에는 영향을 주지 않는다
+        System.out.println(caseStr);  //JavaOracle
+
+        /*
+        * substring():문자열의 일부분을 잘라내여 새로운 문자열을 반환
+        * 원본에 영향을 주지 않는다
+        * */
+        String javaoracle = "javaoracle";
+        System.out.println(javaoracle.substring(3,6)); //aor
+        System.out.println(javaoracle.substring(3)); //
+
+        //원본유지
+        System.out.println(javaoracle);
+        /*
+        * replace() : 문자열에서 대체할 문자열로 기존 문자열을 변경해서 반환
+        * 원본에 영향을 주지않음
+        * */
+        System.out.println(javaoracle.replace("java","python"));
+
+        //원본유지
+        System.out.println(javaoracle.replace("java","python"));
+
+        /*
+        * length() :문자열의 길이를 정수형으로반환한다
+        * 길이가 0인문자열은 null과는 다르다*/
+        System.out.println(javaoracle.length());
+        System.out.println("".length());
+
+        /*
+        * isEmpty() : 문자열의 길이가 0이면 true를 반환, 아니면 false를 반환
+        * 길이가 0인 문자열은 null과 다르다*/
+
+        System.out.println("isEmpty()"+"".isEmpty());
+        System.out.println("isEmpty()"+"abc".isEmpty());
+
+        //에러발생
+//        String nullStr = null;
+//        System.out.println(nullStr.isEmpty()); //nullPointException
 
 
     }
-
 }
