@@ -2,10 +2,13 @@ package com.ohgiraffers.api.string;
 
 public class StringTest {
     public static void main(String[] args) {
-//        String 문자열을 넘겨받아, 첫글자를 대문자로 바꾸는 메서드 작성
-
+//   String 문자열을 넘겨받아, 첫글자를 대문자로 바꾸는 메서드 작성
+//   int 문자열에서 찾는 문자가 몇개 포함되어 있는지 반환하는 메서드 작성
 //        StringProcess sp = new StringProcess();
 //        String result = sp.preChar("hello world");
+
+//        1.문자열을 배열로 변환
+//        2.쉼표세기
 
         String str ="hello world";
         System.out.println(str.substring(0,1).toUpperCase()+str.substring(1));
@@ -30,6 +33,8 @@ public class StringTest {
            }
 
         System.out.println(count1+countA+str);
+        System.out.println(count2+countB+str);
+
 
 
         }
