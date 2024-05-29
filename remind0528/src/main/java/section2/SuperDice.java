@@ -16,7 +16,7 @@ public class SuperDice implements Dice{
     @Override
     public int getNumber() {
 
-      int num = Math.random()
+      int num = (int) Math.random()*10;
 
         return 0;
     }

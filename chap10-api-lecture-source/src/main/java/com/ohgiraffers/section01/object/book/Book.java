@@ -70,7 +70,6 @@ public class Book {
                 this.price == book. price &&
                 this.author.equals(book.author) &&
                 this.title.equals(book.title);
-
     }
 
     @Override

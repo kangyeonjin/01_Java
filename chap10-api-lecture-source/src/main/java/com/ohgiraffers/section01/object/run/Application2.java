@@ -24,7 +24,7 @@ public class Application2 {
          Book book1 = new Book(1,"홍길동전","허균",50000);
          Book book2 = new Book(1,"홍길동전","허균",50000);
 
-        System.out.println("두 인스턴스의 ==연산비교 :"+(book1==book2));
+        System.out.println("두 인스턴스의 == 연산비교 :"+(book1==book2));
         System.out.println("두 인스턴스의 equals비교 :"+(book1.equals(book2)));
 
 
