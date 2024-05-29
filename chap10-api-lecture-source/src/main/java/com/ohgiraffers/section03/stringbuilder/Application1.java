@@ -40,5 +40,12 @@ public class Application1 {
 
         System.out.println(sb);
 
+        System.out.println(sb.hashCode());
+
+        //stringbuilder는 문자열을 변경했다고 새로운 인스턴스가 생성되지않는다
+
+
+
+
     }
 }
