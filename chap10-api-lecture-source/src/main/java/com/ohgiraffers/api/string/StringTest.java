@@ -30,6 +30,7 @@ public class StringTest {
                }else if(str.charAt(i) == count2){
                    countB++;
                }
+
            }
 
         System.out.println(count1+countA+str);
