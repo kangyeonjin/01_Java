@@ -24,4 +24,4 @@ public class SuperClass {
     public final void finalMethod() {}
 
     protected void protectedMethod() {}
-}}
+}

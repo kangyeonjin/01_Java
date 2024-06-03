@@ -1,0 +1,6 @@
+#jdbc driver
+#Fri May 31 11:03:28 KST 2024
+password=password
+driver=orecle.jdbc.driver.OracleDriver
+user=yeonjin
+url=jdbc\:oracle\:thin\:@127.0.0.1\:1521\:XE
