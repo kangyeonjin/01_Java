@@ -13,8 +13,8 @@ public class Application1 {
         * Supplier : 매개변수가 없고 , 리턴값이 있는 getXXX()메소드가지고있다
         * Function : 매개변수와 리턴값이 있는 applyXXX()메소드를 가지고 있다(매개변수를 리턴값으로 매핑)
         * Operator : Function과 똑같이 applyXXX()메소드를 가지고 있는데, 매개변수로 연산을 한후 통일된 타입으로 리턴
-        * Predecate : 매개변수와 boolean값을 반환하는 testXXX()메소드르 가지고있다(매개변수활용해서 boolean값리턴)
-        *
+        * Predicate : 매개변수와 boolean값을 반환하는 testXXX()메소드르 가지고있다(매개변수활용해서 boolean값리턴)
+
         * */
 
         Runnable runnable = () -> System.out.println("hello");
