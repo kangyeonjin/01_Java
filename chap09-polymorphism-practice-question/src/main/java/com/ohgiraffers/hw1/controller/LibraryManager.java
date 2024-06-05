@@ -18,22 +18,20 @@ public class LibraryManager {
     }
 
   public void insertMember(Member mem){
-//      전달받은 mem 주소값을 통해
-//      LibraryManager의 mem에 대입
-
+//전달받은 mem 주소값을 통해
+//LibraryManager의 mem에 대입
+    this.mem = mem;
 
   }
 
   public Member myInfo(){
-//      회원 레퍼런스(mem) 주소값 리턴
-
+//회원 레퍼런스(mem) 주소값 리턴
 
       return mem;
   }
 
   public Book[] selectAll(){
-//      도서 전체 목록 (bList) 주소값 리턴
-
+//도서 전체 목록 (bList) 주소값 리턴
 
    return bList;
   }
@@ -50,7 +48,7 @@ public class LibraryManager {
 // 검색결과의 도서목록에 담기 → HINT : count 이용
 //→ 그 배열 주소 값 리턴(해당 검색결과의 도서목록 주소 값 리턴)
 
-return ;
+   return ;
   }
 
   public int rentBook(int index){
@@ -59,25 +57,34 @@ return ;
 // 전달 받은 index의 bList 객체가 만화책을 참조하고 있고
 
 // 해당 만화책의 제한 나이와 회원의 나이를 비교하여 회원 나이가 적을 경우
-// result를 1로 초기화 → 나이제한으로 대여 불가
+
+    if (age < 18) {
+      result = 1;
+      System.out.println("연령제한으로 대여불가");
+    } else if (age > 18 ) {
+      System.out.println("대여 가능한 연령입니다.");
+    }else{
+      System.out.println("잘못입력된 숫자입니다.");
+    }
 
 
 // 전달 받은 index의 bList 객체가 요리책을 참조하고 있고
 // 해당 요리책의 쿠폰유무가 “유”일 경우
 // 회원의 couponCount 1 증가 처리 후
 
+    if(coupon == "유"){
+      couponCount++;
+    } else if (coupon == "무") {
+      System.out.println("해당없음");
+    }
+
 
 // result를 2로 초기화 → 성공적으로 대여 완료, 요리학원 쿠폰 발급
 // result 값 리턴
 
-
-
-
-return ;
+   return ;
 
   }
-
-
 
 
 
